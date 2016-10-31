@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>HTTP Requests Logger</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/logger.min.css" type="text/css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/general.min.js"></script>
+    <script src="js/bloomfilter.js"></script>
+    <script src="js/logger.min.js"></script>
+</head>
+<body>
+    <ul class="nav nav-pills">
+        <li class="active"><a href="#" id="capture">Capture</a></li>
+        <li><a href="#" id="clearAll">Clear</a></li>
+    </ul>
+
+    <table id="mainTable" class="table table-bordered table-condensed">
+        <thead>
+            <tr>
+                <th style="width: 21px; text-align: center;">#</th>
+                <th style="width: 80px; text-align: center;">Type</th>
+                <th style="width: 300px; text-align: center;">Url</th>
+                <th>URL Details</th>
+            </tr>
+        </thead>
+        <tr>
+            <td colspan="3" style="width: 450px; padding: 0px;">
+                <div class="results" style="overflow: auto; height: 500px; width: 450px;">
+                    <table id="responseList" class="table table-condensed table-hover table-bordered">
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </td>
+            <td style="padding: 0px;" id="previewArea">
+                <div style="padding: 10px; font-weight: bold;">
+                    <p>
+                        URL Window(display New and Referer URL).
+                    </p>
+                    <hr />
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
