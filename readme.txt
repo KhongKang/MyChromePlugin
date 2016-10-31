@@ -9,14 +9,3 @@ Logger v0.1.0
 4.To disable logging, toggle "capture" button in our tab.
 
 
-ads.bf keyNumber=16 BitNumber=32 * 256
-
-tuple.bf keyNumber=16 BitNumber=32 * 256
-
-whitelist.bf keyNumber=16 BitNumber=32 * 256
-
-whois.bf keyNumber=32 BitNumber= 10240 * 1024
-
-inwhois.bf keyNumber=32 BitNumber= 1024 * 1024
-
-malware.txt keyNumber=16 BitNumber= 32 * 256
